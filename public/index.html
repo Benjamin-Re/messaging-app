@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messaging App</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <section id="authView" class="panel auth-panel">
+        <div class="auth-tabs">
+          <button class="tab active" data-auth-tab="login">Login</button>
+          <button class="tab" data-auth-tab="register">Register</button>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+          <h2>Welcome back</h2>
+          <label>
+            Username
+            <input name="username" type="text" placeholder="Enter username" required />
+          </label>
+          <label>
+            Password
+            <input name="password" type="password" placeholder="Enter password" required />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+
+        <form id="registerForm" class="auth-form hidden">
+          <h2>Create account</h2>
+          <label>
+            Username
+            <input name="username" type="text" placeholder="Choose a username" required />
+          </label>
+          <label>
+            Display name
+            <input name="displayName" type="text" placeholder="Display name" required />
+          </label>
+          <label>
+            Password
+            <input name="password" type="password" placeholder="Create password" required />
+          </label>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      <section id="appView" class="app-main hidden">
+        <aside class="sidebar panel">
+          <div class="profile-card">
+            <div id="profileAvatar" class="avatar">U</div>
+            <div>
+              <h3 id="profileName">User</h3>
+              <p id="profileStatus">Available</p>
+            </div>
+          </div>
+
+          <form id="profileForm" class="profile-form">
+            <label>
+              Display name
+              <input id="displayNameInput" name="displayName" type="text" />
+            </label>
+            <label>
+              Status
+              <input id="statusInput" name="status" type="text" maxlength="40" />
+            </label>
+            <label>
+              Bio
+              <textarea id="bioInput" name="bio" rows="3"></textarea>
+            </label>
+            <label>
+              Accent color
+              <input id="colorInput" name="avatarColor" type="color" value="#4f46e5" />
+            </label>
+            <button type="submit">Save profile</button>
+          </form>
+
+          <button id="logoutBtn" class="secondary">Logout</button>
+        </aside>
+
+        <main class="chat-panel panel">
+          <header class="chat-header">
+            <h2>Messages</h2>
+          </header>
+          <div id="userList" class="user-list"></div>
+
+          <div id="chatWindow" class="chat-window">
+            <div id="chatMessages" class="chat-messages"></div>
+            <form id="messageForm" class="message-form">
+              <input
+                id="messageInput"
+                name="message"
+                type="text"
+                placeholder="Type a message..."
+                autocomplete="off"
+                required
+              />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </main>
+      </section>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

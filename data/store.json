@@ -1,0 +1,111 @@
+{
+  "users": [
+    {
+      "username": "alice",
+      "password": "pass123",
+      "displayName": "Alice",
+      "bio": "Hey there! I just joined.",
+      "status": "Available",
+      "avatarColor": "#4f46e5",
+      "createdAt": "2026-11-09T21:02:50.590Z"
+    },
+    {
+      "username": "alice2",
+      "password": "pass123",
+      "displayName": "Alice Two",
+      "bio": "Hey there! I just joined.",
+      "status": "Available",
+      "avatarColor": "#4f46e5",
+      "createdAt": "2026-11-09T21:02:59.995Z"
+    },
+    {
+      "username": "bobby",
+      "password": "pass123",
+      "displayName": "Bobby",
+      "bio": "Working on my profile",
+      "status": "Away",
+      "avatarColor": "#f59e0b",
+      "createdAt": "2026-11-09T21:03:00.034Z"
+    },
+    {
+      "username": "vibecodi",
+      "password": "VibeCodedPassword",
+      "displayName": "CodiVibe",
+      "bio": "Hey there! I just joined.",
+      "status": "Available",
+      "avatarColor": "#4f46e5",
+      "createdAt": "2026-11-09T21:05:57.660Z"
+    },
+    {
+      "username": "slobby",
+      "password": "AiSlobPassword",
+      "displayName": "Slopper",
+      "bio": "Hey there! I just joined.",
+      "status": "Available",
+      "avatarColor": "#4f46e5",
+      "createdAt": "2026-11-09T21:31:17.145Z"
+    },
+    {
+      "username": "codi",
+      "password": "Password1",
+      "displayName": "Vibo",
+      "bio": "Hey there! I just joined.",
+      "status": "Available",
+      "avatarColor": "#4f46e5",
+      "createdAt": "2026-11-09T21:32:30.382Z"
+    },
+    {
+      "username": "bronko",
+      "password": "Password1",
+      "displayName": "Bronko",
+      "bio": "Hey there! I just joined.",
+      "status": "Available",
+      "avatarColor": "#4f46e5",
+      "createdAt": "2026-11-09T21:33:22.241Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1794258180077-644beec1",
+      "from": "alice2",
+      "to": "bobby",
+      "text": "Hello Bob!",
+      "createdAt": "2026-11-09T21:03:00.077Z"
+    },
+    {
+      "id": "msg-1794258395203-c250a0a4",
+      "from": "vibecodi",
+      "to": "alice",
+      "text": "Hi",
+      "createdAt": "2026-11-09T21:06:35.203Z"
+    },
+    {
+      "id": "msg-1794259887993-009cbdcb",
+      "from": "slobby",
+      "to": "vibecodi",
+      "text": "Hey Codi Vibe",
+      "createdAt": "2026-11-09T21:31:27.993Z"
+    },
+    {
+      "id": "msg-1794259958036-4a524009",
+      "from": "codi",
+      "to": "slobby",
+      "text": "gobbel gobbel",
+      "createdAt": "2026-11-09T21:32:38.036Z"
+    },
+    {
+      "id": "msg-1794260013072-bf1049eb",
+      "from": "bronko",
+      "to": "codi",
+      "text": "hi",
+      "createdAt": "2026-11-09T21:33:33.072Z"
+    },
+    {
+      "id": "msg-1794260024825-d2758e4e",
+      "from": "codi",
+      "to": "bronko",
+      "text": "Hey",
+      "createdAt": "2026-11-09T21:33:44.825Z"
+    }
+  ]
+}
