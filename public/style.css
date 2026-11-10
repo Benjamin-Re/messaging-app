@@ -181,7 +181,7 @@ button.secondary:hover {
 
 .chat-panel {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto minmax(0, 1fr);
   min-height: 100%;
 }
 
@@ -198,19 +198,31 @@ button.secondary:hover {
   padding: 16px 12px;
   border-bottom: 1px solid var(--border);
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .user-pill {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-radius: 999px;
   background: var(--panel-alt);
   border: 1px solid transparent;
-  border-radius: 999px;
-  padding: 8px 12px;
   color: var(--text);
+}
+
+.user-pill:hover {
+  background: var(--primary-dark);
+  color: white;
+}
+
+.user-pill:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .user-pill.active {

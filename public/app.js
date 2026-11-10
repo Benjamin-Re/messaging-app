@@ -83,8 +83,21 @@ function renderUserList() {
   state.users.forEach((user) => {
     const button = document.createElement('button');
     button.type = 'button';
-    button.className = `user-pill ${state.activeChat === user.username ? 'active' : ''}`;
-    button.innerHTML = `<span class="dot"></span><span>${user.displayName}</span>`;
+    const isActive = state.activeChat === user.username;
+    button.className = `user-pill ${isActive ? 'active' : ''}`;
+    button.setAttribute('aria-label', `Chat with ${user.displayName}`);
+    button.setAttribute('aria-pressed', String(isActive));
+    button.title = user.displayName;
+
+    const dot = document.createElement('span');
+    dot.className = 'dot';
+    dot.setAttribute('aria-hidden', 'true');
+    button.appendChild(dot);
+
+    const name = document.createElement('span');
+    name.textContent = user.displayName;
+    button.appendChild(name);
+
     button.addEventListener('click', () => selectChat(user.username));
     userListEl.appendChild(button);
   });

@@ -62,6 +62,15 @@
       "status": "Available",
       "avatarColor": "#4f46e5",
       "createdAt": "2026-11-09T21:33:22.241Z"
+    },
+    {
+      "username": "peter",
+      "password": "Password1",
+      "displayName": "Peter",
+      "bio": "Hey there! I just joined.",
+      "status": "Available",
+      "avatarColor": "#4f46e5",
+      "createdAt": "2026-11-10T13:33:25.819Z"
     }
   ],
   "messages": [
